@@ -4,16 +4,24 @@ public class Main {
         System.out.println("Please, provide two numbers and press ENTER:");
 
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
 
         System.out.println(a + b);
-    if(a>b){
+    if(a > b){
         System.out.println("a is more than b");
-    }   else{
-        System.out.println("b is more than a");;
     }
+        else if (a == b) {
+            System.out.println("a is equal to b");
+            }
+    else{
+            System.out.println("b is more than a");
+        }
 
+//        int i;
+//    for(i=0; i < 100; i++){
+//        System.out.println(i);
+//    }
     }
 
 }
